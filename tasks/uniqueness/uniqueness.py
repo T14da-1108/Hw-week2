@@ -14,6 +14,7 @@ def union(list1: tp.List[int], list2: tp.List[int]) -> set[int]:
     result = set1.union(set2)
     return result
 
+
 def diff(list1: tp.List[int], list2: tp.List[int]) -> set[int]:
     """
     Returns the difference between two lists as a set
@@ -27,6 +28,7 @@ def diff(list1: tp.List[int], list2: tp.List[int]) -> set[int]:
     set2 = set(list2)
     result = set1.difference(set2)
     return result
+
 
 def sym_diff(list1: tp.List[int], list2: tp.List[int]) -> set[int]:
     """
