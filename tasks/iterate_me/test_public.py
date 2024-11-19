@@ -10,7 +10,7 @@ from .iterate_me import get_squares, get_indices_from_one, get_max_element_index
 ###################
 
 
-def test_get_squares(numbers) -> None:
+def test_get_squares(numbers: list[int]) -> None:
     assert testlib.is_bytecode_op_used(get_squares, 'BINARY_OP')
 
 

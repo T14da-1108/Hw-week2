@@ -46,4 +46,4 @@ def reverse_slice(lst: list[int]) -> list[int]:
     reversed_list = []
     for i in range(len(lst) - 1, - 1, - 1):
         reversed_list.append(lst[i])
-        return reversed_list
+    return reversed_list
