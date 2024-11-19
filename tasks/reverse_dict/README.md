@@ -14,7 +14,7 @@ Write a function that inverts a dictionary. That is, the values become keys, and
 ### Example
 
 ```python
->>> revert({"a": "1", "b": "2", "c": "1"})
+>>>revert({"a": "1", "b": "2", "c": "1"})
 {"1": ["a", "c"], "2": ["b"]})
 ```
 

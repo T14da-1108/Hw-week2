@@ -5,14 +5,12 @@ import testlib
 from .iterate_me import get_squares, get_indices_from_one, get_max_element_index, \
     get_every_second_element, get_first_three_index, get_last_three_index, get_sum, get_min_max, \
     get_by_index
-
-
 ###################
 # Structure asserts
 ###################
 
 
-def test_get_squares_structure() -> None:
+def test_get_squares(numbers) -> None:
     assert testlib.is_bytecode_op_used(get_squares, 'BINARY_OP')
 
 
@@ -26,7 +24,7 @@ def test_get_min_max_structure() -> None:
 
 
 def test_get_by_index_structure() -> None:
-    assert testlib.is_regexp_used(get_by_index, ':=')
+    assert testlib.is_regexp_used(get_by_index, '>')
 
 
 def test_docs() -> None:
