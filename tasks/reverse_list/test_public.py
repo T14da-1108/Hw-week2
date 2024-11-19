@@ -42,8 +42,11 @@ def test_reverse_inplace_iterative_structure() -> None:
 
 
 def test_reverse_inplace_structure() -> None:
-    assert testlib.is_instruction_used(reverse_inplace, 'argval', 'reverse')
-
+    assert not testlib.is_instruction_used(reverse_inplace, 'argval', 'reverse')
+    assert not testlib.is_bytecode_op_used(reverse_inplace_iterative,'BUILD_SLICE')
+    lst = [1, 2, 3, 4, 5]
+    reverse_inplace(lst)
+    assert lst == [5, 4, 3, 2, 1]
 
 def test_reverse_reversed_structure() -> None:
     assert testlib.is_global_used(reverse_reversed, 'reversed')

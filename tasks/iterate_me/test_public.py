@@ -1,5 +1,5 @@
 import copy
-
+import pytest
 import testlib
 
 from .iterate_me import get_squares, get_indices_from_one, get_max_element_index, \
@@ -9,8 +9,12 @@ from .iterate_me import get_squares, get_indices_from_one, get_max_element_index
 # Structure asserts
 ###################
 
+def numbers ():
+    return[1,2,3,4,5]
+
 
 def test_get_squares(numbers: list[int]) -> None:
+    result = get_squares(numbers)
     assert testlib.is_bytecode_op_used(get_squares, 'BINARY_OP')
 
 
