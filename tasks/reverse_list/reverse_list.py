@@ -44,5 +44,3 @@ def reverse_slice(lst: list[int]) -> list[int]:
     :return: reversed list
     """
     return lst[::-1]
-
-
