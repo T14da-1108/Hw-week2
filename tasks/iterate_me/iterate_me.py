@@ -7,7 +7,7 @@ def get_squares(elements: list[int]) -> list[int]:
     :return: list with squared values
     Use ** operator here (https://docs.python.org/3/reference/expressions.html#the-power-operator)
     """
-    return [ x ** 2 for x in elements ]
+    return [x ** 2 for x in elements]
 
 # ====================================================================================================
 
@@ -17,7 +17,7 @@ def get_indices_from_one(elements: list[int]) -> list[int]:
     :param elements: list with integer values
     :return: list with indices started from 1
     """
-    return [ i + 1 for i, in enumerate(elements) ]
+    return [i + 1 for i, in enumerate(elements)]
 
 # ====================================================================================================
 

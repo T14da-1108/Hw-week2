@@ -24,7 +24,7 @@ def reverse_inplace(lst: list[int]) -> None:
     :param lst: input list
     :return: None
     """
-    left, right = 0, len (lst) - 1
+    left, right = 0, len(lst) - 1
     while left < right:
         lst[left], lst[right] = lst[right], lst[left]
         left += 1
