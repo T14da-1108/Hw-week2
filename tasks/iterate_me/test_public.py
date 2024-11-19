@@ -9,7 +9,7 @@ from .iterate_me import get_squares, get_indices_from_one, get_max_element_index
 # Structure asserts
 ###################
 
-def numbers ():
+def numbers () -> list[int]:
     return[1,2,3,4,5]
 
 
