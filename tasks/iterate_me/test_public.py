@@ -44,7 +44,7 @@ def test_docs() -> None:
 ###################
 
 
-def test_get_squares() -> None:
+def test_get_squares_v2() -> None:
     lst_a = [-2, 0, 5, 2, 3, 4, 3]
     given_list_a = copy.deepcopy(lst_a)
 
