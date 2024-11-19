@@ -1,6 +1,3 @@
-import lst
-
-
 def reverse_iterative(lst: list[int]) -> list[int]:
     reversed_list = []
     for i in range(len(lst) - 1, - 1, - 1):
