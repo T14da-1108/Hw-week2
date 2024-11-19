@@ -7,7 +7,7 @@ def get_squares(elements: list[int]) -> list[int]:
     :return: list with squared values
     Use ** operator here (https://docs.python.org/3/reference/expressions.html#the-power-operator)
     """
-    return [ x ** 2 for x in elements ]
+    return [x ** 2 for x in elements]
 
 # ====================================================================================================
 
@@ -17,7 +17,7 @@ def get_indices_from_one(elements: list[int]) -> list[int]:
     :param elements: list with integer values
     :return: list with indices started from 1
     """
-    return [ i+1 for i, _  in enumerate(elements) ]
+    return [i+1 for i, _  in enumerate(elements)]
 
 # ====================================================================================================
 
@@ -68,7 +68,7 @@ def get_sum(elements: list[int]) -> int:
     :return: sum of elements
     Use sum function here (https://docs.python.org/3/library/functions.html#sum)
     """
-    return sum  (elements)
+    return sum(elements)
 
 # ====================================================================================================
 
@@ -80,7 +80,7 @@ def get_min_max(elements: list[int], default: int | None) -> tuple[int | None, i
     :return: (min, max) of list elements or (default, default) if elements are empty
     Use max/min functions here (https://docs.python.org/3/library/functions.html#max)
     """
-    if elements  :
+    if elements:
         return (min(elements)), max(elements)
     return default, default
 
@@ -95,6 +95,6 @@ def get_by_index(elements: list[int], i: int, boundary: int) -> int | None:
     :return: element at index `i` from `elements` if element greater, then boundary and None otherwise
     """
     if i < len(elements):
-        if elements[i] > boundary:
+        if elements [i] > boundary:
             return elements[i]
     return None
