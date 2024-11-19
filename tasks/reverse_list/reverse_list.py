@@ -1,4 +1,9 @@
 def reverse_iterative(lst: list[int]) -> list[int]:
+    """
+    Reverse the given list and return the reversed list using iteration.
+    :param lst: The list to be reversed.
+    :return: A new list that is the reverse of the input list.
+    """
     reversed_list = []
     for i in range(len(lst) - 1, - 1, - 1):
         reversed_list.append(lst[i])
@@ -6,6 +11,10 @@ def reverse_iterative(lst: list[int]) -> list[int]:
 
 
 def reverse_inplace_iterative(lst: list[int]) -> None:
+    """
+    Reverse the given list in place using a two-pointer iterative approach.
+    :param lst: The list to be reversed.
+    """
     left = 0
     right = len(lst) - 1
 
